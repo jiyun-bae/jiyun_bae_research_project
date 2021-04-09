@@ -1,0 +1,93 @@
+html, body {
+	margin:0;
+	padding: auto;
+	width:100%;
+	height:100%;
+}
+body {
+	color:#666;
+	background-color:black;
+}
+
+.maincontainer {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    a {
+        font-size: 20px;
+        border: dashed;
+        padding: 20px;
+        text-decoration: none;
+        display: inline;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+h1 {
+	color:#666;
+	font-size:30px;
+	text-align:center;
+	margin:0;
+	padding:0.5rem 0;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+a {
+	color:#0095dd;
+	text-decoration:none;
+}
+
+a:hover, a:focus {
+	color:#2255aa;
+	text-decoration:underline;
+}
+
+/* fullscreen */
+html:-ms-fullscreen {
+	width:100%;
+}
+:-webkit-full-screen {
+	background-color:transparent;
+}
+video:-webkit-full-screen + .controls {
+	background:#ccc; /* required for Chrome which doesn't heed the transparent value set above */
+}
+video:-webkit-full-screen + .controls progress {
+	margin-top:0.5rem;
+}
+
+/* hide controls on fullscreen with WebKit */
+figure[data-fullscreen=true] video::-webkit-media-controls {
+	display:none !important;
+}
+
+figure[data-fullscreen=true] {
+	max-width:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	max-height:100%;
+}
+figure[data-fullscreen=true] video {
+	height:auto;
+}
+figure[data-fullscreen=true] figcaption {
+	display:none;
+}
+figure[data-fullscreen=true] .controls {
+	position:absolute;
+	bottom:2%;
+	width:100%;
+	z-index:2147483647;
+}
+figure[data-fullscreen=true] .controls li {
+	width:5%;
+}
+figure[data-fullscreen=true] .controls .progress {
+	width:68%;
+}
