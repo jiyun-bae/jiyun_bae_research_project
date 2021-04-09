@@ -1,0 +1,34 @@
+.audiocontrols {
+    text-align: center;
+    padding: 10px;
+}
+
+.player {
+    margin-top: 10%;
+}
+
+figure {
+	position:relative;
+	max-width:1024px;
+	max-width:64rem;
+	width:100%;
+	height:100%;
+	max-height:494px;
+	max-height:30.875rem;
+	margin:20px auto;
+	margin:1.25rem auto;
+	padding:20px;
+	padding:1.051%;
+	background-color:#666;
+}
+
+figcaption {
+	display:block;
+	font-size:12px;
+	font-size:0.75rem;
+	color:#fff;
+}
+
+video {
+	width:100%;
+}

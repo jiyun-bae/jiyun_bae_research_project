@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Research Project</title>
+    <link href="../custom-controls.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css"/>
+  </head>
+  <body>
+    <h1>Audio</h1>
+
+  <section class="player">
+      <p>Click the PLAY button</p>
+    <audio controls>
+      <source src="/audio/wilbur.mp3" type="audio/mp3">
+      <source src="/audio/wilbur.ogg" type="audio/ogg">
+    </audio>
+
+    <div class="audiocontrols">
+      <button class="playpause">Play</button>
+      <button class="stop">Stop</button>
+      <button class="rwd">Rwd</button>
+      <button class="fwd">Fwd</button>
+      <div class="time">00:00</div>
+    </div>
+  </section>
+
+  <script src="js/audioplayer.js"></script>
+  </body>
+</html>
